@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f2f4f5; color: #293b4c; font-family: Arial, sans-serif; }
+#conexion { padding: 12px; text-align: center; color: white; font-weight: bold; background: #119e87; }
+#conexion.offline { background: #bd6718; }
+main { max-width: 540px; margin: 24px auto; padding: 22px; background: white; border-radius: 14px; box-shadow: 0 4px 20px #0001; }
+h1 { text-align: center; margin: 0; }
+.intro { text-align: center; color: #687b83; }
+label { display: block; font-weight: bold; margin: 16px 0 6px; }
+input, select, textarea { width: 100%; padding: 12px; border: 1px solid #c5cdd2; border-radius: 6px; font: inherit; }
+button { border: 0; border-radius: 6px; background: #293b4c; color: white; padding: 13px; font: inherit; font-weight: bold; cursor: pointer; }
+form button { width: 100%; margin-top: 10px; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.camara { padding: 12px; border: 1px dashed #aab8c0; border-radius: 8px; }
+video, img { width: 100%; border-radius: 8px; object-fit: contain; max-height: 360px; }
+[hidden] { display: none !important; }
+section { border-top: 1px solid #ccd4d9; margin-top: 20px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+h2 { font-size: 19px; }
+#enviar { background: #119e87; font-size: 14px; }
+.reporte { background: #f7f8f9; border: 1px solid #dce1e5; padding: 14px; border-radius: 9px; margin: 12px 0; overflow-wrap: anywhere; }
+.reporte h3 { margin: 0; }
+.estado { display: inline-block; padding: 6px 9px; border-radius: 5px; background: #b96817; color: white; font-size: 12px; }
+.estado.enviado { background: #119e87; }
+.nota, #mensaje { font-size: 13px; }
+@media(max-width: 580px) { main { margin: 14px; padding: 16px; } }

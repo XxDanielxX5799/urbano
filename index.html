@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#119e87">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Alerta Urbana</title>
+</head>
+<body>
+<div id="conexion" role="status"></div>
+<main>
+<h1>Alerta Urbana</h1>
+<p class="intro">Reporta incidencias en tu colonia aunque no tengas señal.</p>
+<form id="formulario">
+<label for="direccion">Calle y colonia</label>
+<input id="direccion" required placeholder="Ej. Calle Juárez #315, colonia Centro">
+<label for="tipo">Tipo de incidencia</label>
+<select id="tipo"><option>Bache en vialidad</option><option>Luminaria apagada</option><option>Fuga de agua</option><option>Acumulación de basura</option><option>Otro problema</option></select>
+<label for="descripcion">Descripción (opcional)</label>
+<textarea id="descripcion" rows="3"></textarea>
+<label>Evidencia fotográfica</label>
+<div class="camara">
+<video id="video" autoplay playsinline muted hidden></video>
+<img id="foto" alt="Evidencia capturada" hidden>
+<button type="button" id="abrir">Encender cámara</button>
+<button type="button" id="capturar" hidden>Tomar fotografía</button>
+<button type="button" id="cerrar" hidden>Cerrar cámara</button>
+</div>
+<button type="submit">Guardar reporte</button>
+</form>
+<p id="mensaje" role="status"></p>
+<section><header><h2>Mis reportes</h2><button id="enviar">Subir al municipio</button></header><p class="nota">Modo demostración: el envío no llega a un municipio real.</p><div id="reportes"></div></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
